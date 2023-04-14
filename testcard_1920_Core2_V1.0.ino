@@ -29,8 +29,8 @@
 
 // Set the name and password of the wifi to be connected.
 const char* call = " CALL";              //  set text centered, up to 7 characters
-const char* ssid = "My SSID";              //  set  your wifi ssid
-const char* password = "password";     //  set your wifi password
+const char* ssid = "your SSID";              //  set  your wifi ssid
+const char* password = "your ssid Password";     //  set your wifi password
 const char* ntpServer = "ntp.unice.fr";  //  set your Internet server address
 
 const long gmtOffset_sec = 0;      // french GMT offset, zero for UTC time
@@ -233,7 +233,7 @@ void loop(void) {
   M5.Lcd.setCursor(830, 110);
   M5.Lcd.setTextColor(WHITE);
   M5.Lcd.setTextSize(9);
-  M5.Lcd.print("F1CJN");
+  M5.Lcd.print(call);
 
   while (true) {
     printLocalTime();  //boucle infinie
